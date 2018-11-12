@@ -1,0 +1,59 @@
+// ConsoleApplication3.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+
+
+int main()
+{
+	int a;
+	float b;
+	string c;
+	int result;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	if (c == "+" || c == "plus") //&&
+	{
+		result = a + b;
+		cout << result << endl;
+		
+	}
+	else if (c == "-")
+	{
+		result = a - b;
+		cout << result << endl;
+	}
+	else if (c == "*")
+	{
+		result = a * b;
+		cout << result << endl;
+	}
+	else if (c == "/")
+	{
+		if (b == 0)
+		{
+			cout << "b == 0" << endl;
+		}
+		else 
+		{
+			result = a / b;
+			cout << result << endl;
+		}
+	}
+
+
+	
+    return 0;
+}
+
+
+
+
+
