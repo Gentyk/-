@@ -1,0 +1,53 @@
+// ConsoleApplication2.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+	
+	// объявление
+	int a;
+	float b;
+	string s;
+	bool f;
+
+	/*
+	cout << "input a:"<<endl;
+	cin >> a;
+	cout << a << endl;;
+	a = 10;
+
+	if (a > 10) 
+	{
+		cout << "ppppppp" << endl;
+	}
+	else if (a==9)
+	{
+		cout << "no" << endl;
+	}
+	
+	cin >> s;
+
+	if (s == "no")
+	{
+		cout << s;
+	}
+	*/
+	a = 10;
+	while (a > 5)
+	{
+		a = a - 1;
+		cout << a << endl;
+	}
+
+
+
+    return 0;
+}
+
