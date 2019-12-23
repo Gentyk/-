@@ -8,7 +8,7 @@ int main(void)
 	int i, n;
 	double x,x1, y, a, b, res;
 	n = 2;
-	for (i=0; i<5; i++)
+	for (i=0; i<25; i++)
 		n = n*2;
 
 	// убывает на отрузке [2,4]
