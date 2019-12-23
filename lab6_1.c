@@ -10,13 +10,13 @@ int main(void)
 	int i, n;
 	double x, y, a, b;
 	n = 2;
-	for (i=0; i<29; i++)
-		n = n*2;
+	for (i = 0; i<29; i++)
+		n = n * 2;
 
 	// возрастает на отрузке [3,8]
 	a = 3;
 	b = 8;
-	x = b - a;
+	x = (b + a) / 2;
 	for (i = 0; i < n; i++)
 	{
 		y = f(x);
@@ -26,10 +26,10 @@ int main(void)
 			b = x;
 		else
 			a = x;
-		x = b - a;
+		x = (b + a)/2;
 	}
 
 	printf("%.12lf\n", x);
-	//getchar();
+	getchar();
 	return 0;
 }
